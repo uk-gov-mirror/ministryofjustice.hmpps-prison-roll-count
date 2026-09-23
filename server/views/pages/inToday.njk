@@ -59,7 +59,7 @@
 
   <div class="govuk-grid-row govuk-!-margin-bottom-9">
     <div class="govuk-grid-column-full results-table results-table__results">
-      {% set sortParam = sort or 'timeDateDeparted&direction=descending' %}
+      {% set sortParam = sort or 'timeArrived&direction=ascending' %}
       {% set paginationBase = '/in-today?sort=' ~ sortParam %}
       {% set pageParam = '&page=' ~ currentPage if currentPage > 1 else '' %}
       {% set returnPathWithSort = paginationBase ~ pageParam %}
